@@ -1,9 +1,6 @@
 #!/bin/bash
-mkdir /temp
-chmod 777 /temp
-echo "test file" > /temp/testfile.txt
 #yum update -y
-#yum install httpd -y
-#echo "<html><body><h1>Test Web Site</h1></body></html>" >/var/www/html/index.html
-#systemctl start httpd
+yum install httpd -y
+echo "<html><body><h1>Test Web Site</h1></body></html>" > /var/www/html/index.html
+systemctl start httpd
 #systemctl enable httpd
